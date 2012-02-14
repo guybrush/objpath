@@ -1,9 +1,12 @@
 { "name" : "objpath" 
-, "version" : "0.0.1"
-, "scripts" : { "test" : "./node_modules/.bin/mocha ./test.js -u exports -R spec" }
+, "version" : "0.0.2"
+, "main" : "./objpath.js"
+, "scripts" : 
+  { "test" : "./node_modules/.bin/mocha ./test.js -u exports -R spec" }
 , "devDependencies" : { "mocha" : "0.11.x" }
 , "repository" : 
   { "type" : "git" 
   , "url" : "git://gist.github.com/1749439.git"
   }
+, "homepage" : "https://gist.github.com/1749439"
 }
