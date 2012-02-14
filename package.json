@@ -1,5 +1,5 @@
 { "name" : "objpath" 
-, "version" : "0.0.2"
+, "version" : "0.0.3"
 , "main" : "./objpath.js"
 , "scripts" : 
   { "test" : "./node_modules/.bin/mocha ./test.js -u exports -R spec" }

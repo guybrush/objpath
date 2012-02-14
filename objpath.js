@@ -31,22 +31,25 @@ function objpath(obj, keyString, value) {
   if (value === undefined) { // get data
     var value = temp
     for (var i=0, len=keys.length; i<len; i++) {
-      if (value === undefined) return false
+      if (value[keys[i]] === undefined) return false
       value = value[keys[i]]
     }
     return value
   } else { // set data
     if (keys.length==0) {
       obj[keyString] = value
+      //console.log(obj)
       return obj
     }
     for (var i=0, len=keys.length; i<len; i++) {
       if (i==(len-1)) {
         temp[keys[i]] = value
       } else {
+        temp[keys[i]] = temp[keys[i]] || {}
         temp = temp[keys[i]] 
       }
     }
+    //console.log(obj)
     return obj
   }
 }
