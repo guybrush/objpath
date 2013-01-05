@@ -28,7 +28,6 @@ function objpath(obj, keyString, value) {
   if (value === undefined) { // get data
     var value = temp
     for (var i=0, len=keys.length; i<len; i++) {
-      if (value === undefined) return false
       value = value[keys[i]]
     }
     return value

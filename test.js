@@ -16,8 +16,13 @@ assert.deepEqual(obj,result)
 var obj = {a:{aa:undefined}}
 var result = op(obj,'a.ab',0)
 var result = op(obj,'a.ac',false)
+
 assert.deepEqual(result,{a:{aa:undefined,ab:0,ac:false}})
 assert.equal(op(obj,'a.aa'),undefined)
 assert.equal(op(obj,'a.ac'),false)
 assert.deepEqual(obj,result)
+
+var result = op({},'a',{b:undefined})
+assert.deepEqual(result,{a:{b:undefined}})
+assert.equal(op(result,'a.b'),undefined)
 
