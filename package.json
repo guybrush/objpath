@@ -1,9 +1,12 @@
-{ "name" : "objpath" 
-, "version" : "0.0.3"
-, "main" : "./objpath.js"
-, "scripts" : { "test" : "node ./test.js" }
-, "repository" : 
-  { "type" : "git" 
-  , "url" : "git://github.com/guybrush/objpath.git"
+{
+  "name": "objpath",
+  "version": "0.0.4",
+  "main": "./objpath.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guybrush/objpath.git"
   }
 }
