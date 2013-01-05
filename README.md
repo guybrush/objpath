@@ -1,8 +1,6 @@
-;(function(){
+# objpath
 
-if (module && module.exports && module.exports) module.exports = objpath
-else (function () { return this })().objpath = objpath
-
+``` javascript
 /**
  * create/access objects with a key-string
  *
@@ -47,6 +45,4 @@ function objpath(obj, keyString, value) {
     return obj
   }
 }
-
-})()
-
+```

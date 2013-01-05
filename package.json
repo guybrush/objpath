@@ -1,12 +1,9 @@
 { "name" : "objpath" 
 , "version" : "0.0.3"
 , "main" : "./objpath.js"
-, "scripts" : 
-  { "test" : "./node_modules/.bin/mocha ./test.js -u exports -R spec" }
-, "devDependencies" : { "mocha" : "0.11.x" }
+, "scripts" : { "test" : "node ./test.js" }
 , "repository" : 
   { "type" : "git" 
-  , "url" : "git://gist.github.com/1749439.git"
+  , "url" : "git://github.com/guybrush/objpath.git"
   }
-, "homepage" : "https://gist.github.com/1749439"
 }
